@@ -21,6 +21,7 @@ var testCommon = require('./common')({
 })
 
 require('./argument-checking-test')(test, testCommon)
+require('./manifest-test')(test, testCommon)
 require('./batch-test')(test, testCommon)
 if (testCommon.encodings) require('./binary-test')(test, testCommon)
 if (testCommon.clear) require('./clear-test')(test)
